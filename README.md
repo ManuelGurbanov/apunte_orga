@@ -283,3 +283,11 @@ x /<length><format> <address_expression>   # With length and format
 ---
 
 *This reference covers essential x86-64 assembly programming concepts, calling conventions, and debugging techniques.*
+
+
+break eliminarTuitsDelFeed
+run
+info reg rsp
+p/x $rsp % 16
+
+Antes de un call debería dar 0.
