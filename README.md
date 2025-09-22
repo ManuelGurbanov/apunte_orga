@@ -291,3 +291,18 @@ info reg rsp
 p/x $rsp % 16
 
 Antes de un call debería dar 0.
+
+
+
+
+
+#GDB
+
+>>> p *(tuit_t*) $r8
+$11 = {
+  mensaje = "buenas buenas", '\000' <repetidos 126 veces>,
+  favoritos = 0,
+  retuits = 0,
+  id_autor = 200
+}
+>>> 
